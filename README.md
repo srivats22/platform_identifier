@@ -11,22 +11,23 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-Platform Identifier: 
+## Platform Identifier: 
+
 A flutter package to make it easier to identify what platform your application is running on
 
 ## The pain point
-Current if you want to identify what platform you are running on you can make use of
-the Universal platform which is a great package. But what if you want to know if you application
-is running on a mobile browser? or a desktop browser? or if's on a Mac, Windows or Linux browser?
-You will need to declare custom boolean variables to handle this
+Currently, if you want to identify what platform you are running on you can make use of
+the Universal platform package which is a great package. But what if you want to know if your application
+is running on a mobile browser? or a desktop browser? or if's on a Mac, Windows, or Linux browser?
+You will need to declare custom boolean variables to handle this, and to do it for every project is a tedious process.
 
 ## The Fix
 The fix is to make use of Platform Identifier.
-It has a bunch of methods that makes it easier to tackle the scenario mentioned in the pain point 
+It has a bunch of methods that make it easier to tackle the scenario mentioned in the pain point 
 
 ## Getting started
 
-&ensp; Installation
+&ensp;Installation
 ```
   platform_identifier:
     git:
@@ -34,21 +35,20 @@ It has a bunch of methods that makes it easier to tackle the scenario mentioned 
       ref: main
 ```
 
-&ensp; Import 
+&ensp;Import 
 ```
   import 'package:platform_identifier/platform_identifier.dart';
 ```
 
-&ensp; Usage
+&ensp;Usage
 ```
     Text("Is Mobile: ${PlatformIdentifier.isMobile}"),
 ```
 For a complete application refer to the application under the example folder
 
 ## Contributions
-Feel free to open PRs if you feel more methods can be added or you want to help
-make existing behaviors better
+Feel free to open PRs if you feel more methods can be added or if you want to help make existing behaviors better
 
 ## Issues/Request
 Feel free to raise issues & requests in the Issues tab on this repository
-or reach out to me on Instagram (Preferred), X (fka Twitter)
+or reach out to me on [Instagram (Preferred)](https://www.instagram.com/srivats22/), [X (fka Twitter)](https://twitter.com/srivats_22)
