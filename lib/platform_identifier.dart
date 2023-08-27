@@ -34,4 +34,8 @@ class PlatformIdentifier {
   // check if application is running on ios browser
   static bool get isBrowserOnIos => (kIsWeb &&
       (defaultTargetPlatform == TargetPlatform.iOS));
+  // check if application is running on android
+  static bool get isOnAndroid => (defaultTargetPlatform == TargetPlatform.android);
+  // check if application is running on ios
+  static bool get isOnIos => (defaultTargetPlatform == TargetPlatform.android);
 }

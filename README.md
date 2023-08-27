@@ -11,29 +11,44 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Platform Identifier: 
+A flutter package to make it easier to identify what platform your application is running on
 
-## Features
+## The pain point
+Current if you want to identify what platform you are running on you can make use of
+the Universal platform which is a great package. But what if you want to know if you application
+is running on a mobile browser? or a desktop browser? or if's on a Mac, Windows or Linux browser?
+You will need to declare custom boolean variables to handle this
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+## The Fix
+The fix is to make use of Platform Identifier.
+It has a bunch of methods that makes it easier to tackle the scenario mentioned in the pain point 
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+&ensp; Installation
+```
+  platform_identifier:
+    git:
+      url: https://github.com/srivats22/platform_identifier.git
+      ref: main
 ```
 
-## Additional information
+&ensp; Import 
+```
+  import 'package:platform_identifier/platform_identifier.dart';
+```
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+&ensp; Usage
+```
+    Text("Is Mobile: ${PlatformIdentifier.isMobile}"),
+```
+For a complete application refer to the application under the example folder
+
+## Contributions
+Feel free to open PRs if you feel more methods can be added or you want to help
+make existing behaviors better
+
+## Issues/Request
+Feel free to raise issues & requests in the Issues tab on this repository
+or reach out to me on Instagram (Preferred), X (fka Twitter)
