@@ -25,7 +25,7 @@ You will need to declare custom boolean variables to handle this, and to do it f
 The fix is to make use of Platform Identifier.
 It has a bunch of methods that make it easier to tackle the scenario mentioned in the pain point 
 
-## Getting started
+## Getting started`
 
 &ensp;Installation
 ```
